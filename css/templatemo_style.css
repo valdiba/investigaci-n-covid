@@ -422,9 +422,22 @@ p {
   margin-top: 60px;
 }
 
+.what-we-do .tab-content-services .hip-image img {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 150px;
+}
 .what-we-do .tab-content-services .right-image img {
   width: 100%;
   overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.what-we-do .tab-content-services .left-image img {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
 }
 
 .what-we-do .tab-content-services .left-text h4 {
@@ -436,6 +449,16 @@ p {
 }
 
 .what-we-do .tab-content-services .left-text p {
+  color: #7a7a7a;
+}
+.what-we-do .tab-content-services .center-text h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.what-we-do .tab-content-services .center-text p {
   color: #7a7a7a;
 }
 
