@@ -453,13 +453,19 @@ http://www.templatemo.com/tm-508-power
                     <div class="wrapper">
                         <div class="col-md-6">
                             <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab1" class="active">
+                              <li><a href="#tab6" class="active">
+                                <ul class="info-post">
+                                    <li>Detalles</li>
+                                </ul>
+                                  Detalles de la investigación
+                              </a></li>
+                                <li><a href="#tab1">
                                   <ul class="info-post">
                                       <li>Metodología</li>
                                   </ul>
-                                    Dado el problema, ¿Cómo se deben procesar los datos?
+                                    Preparación de los datos
                                 </a></li>
-                                <li><a href="#tab2" class="active">
+                                <li><a href="#tab2">
                                   <ul class="info-post">
                                       <li>Datos</li>
                                   </ul>
@@ -467,15 +473,15 @@ http://www.templatemo.com/tm-508-power
                                 </a></li>
                                 <li><a href="#tab3">
                                   <ul class="info-post">
-                                      <li>Resultado</li>
+                                      <li>Metodología</li>
                                   </ul>
-                                    ¿Qué tipo de información pueden extraer?
+                                    ¿Qué tipo de información se puede extraer?
                                 </a></li>
                                 <li><a href="#tab4">
                                   <ul class="info-post">
-                                      <li>Estadística</li>
+                                      <li>Metodología</li>
                                   </ul>
-                                    Dados los conocientos de estadística que tienen, ¿Qué pueden hacer con los datos?
+                                    Análisis estadístico
                                 </a></li>
                                 <li><a href="#tab5">
                                   <ul class="info-post">
@@ -487,29 +493,95 @@ http://www.templatemo.com/tm-508-power
                         </div>
                         <div class="col-md-6">
                             <div id="first-tab-group" class="tabgroup">
+
+                              <div id="tab6">
+                                  <img src="img/blog-post-2.jpg" alt="">
+                                  <div class="text-content">
+                                    <ul class="info-post">
+                                        <li>Detalles</li>
+                                    </ul>
+                                      <h4>Detalles de la Investigación</h4>
+                                      <p>Aqui va tipo de analisis, tipo de investigación y area de estudio</p>
+                                  </div>
+                              </div>
+
                                 <div id="tab1">
-                                    <img src="img/blog-post-1.jpg" alt="">
+                                    <img src="img/segment.svg" alt="" class="headerimg">
                                     <div class="text-content">
                                       <ul class="info-post">
                                           <li>Metodología</li>
                                       </ul>
-                                        <h4>Dado el problema, ¿Cómo se deben procesar los datos?</h4>
+                                        <h4>Preparación de los datos</h4>
                                         <p>Para obtener información útil dentro de la investigación se recolectan y filtran los datos de la base de datos dada, de acuerdo con el
                                           Informe sobre Desarrollo Humano 2019 publicado por el Programa de las Naciones Unidas para el Desarrollo
                                           <a href="http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf">(PNUD, 2019)</a>.
                                           La metodología para tratar los datos, fue la siguiente:</p>
                                           <br/>
-                                          <ol>
-                                            <li>Se extraen los registros (de la base de datos de COVID-19) correspondientes a los países seleccionados anteriormente.</li>
-                                            <li>A continuación, se limpian los registros, dejando solo iso_code, continent, location, date, total_cases, new_cases,datos que
-                                              corresponden a la información necesaria para responder la pregunta de investigación.</li>
-                                            <li>Y después se incorpora una columna a cada registro con el IDH correspondiente.</li>
-                                          </ol>
+                                          <div class="col-md-12">
+                                            <div class="row steps">
+                                                <ul class="tabs clearfix" data-tabgroup="third-tab-group" style="display: flex;justify-content: center;">
+                                                    <li class="col-md-15 col-sm-12 col-xs-12">
+                                                        <a href="#firststep" class="active">
+                                                            1
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-md-15 col-sm-12 col-xs-12">
+                                                        <a href="#secondstep">
+                                                            2
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-md-15 col-sm-12 col-xs-12">
+                                                        <a href="#thirdstep" >
+                                                          3
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-md-15 col-sm-12 col-xs-12">
+                                                        <a href="#fourthstep" >
+                                                          4
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <section id="third-tab-group" class="tabgroup">
+                                              <div id="firststep">
+                                                <p>Se ajusta la base de datos entregada (Conjunto de datos completo de COVID-19, presentado por el Centro Europeo para la Prevención y el Control de las Enfermedades
+                                                  ECDC) a un formato de texto en columnas. Esto se hace, seleccionando todos los datos, y utilizando la función "Texto en columnas" en el apartado de Datos.
+                                                  <br/>
+                                                  Después, se le da el formato de tabla y, para verificar, en el apartado Diseño de Tabla, se utiliza "Eliminar duplicados"
+                                                </p>
+                                              </div>
+                                              <div id="secondstep">
+                                                <p>Se extraen los registros (de la base de datos de COVID-19) correspondientes a los países seleccionados anteriormente, los cuales son: Seychelles, Canadá, Estados Unidos,
+                                                  China, Singapur, Alemania, Suiza, Reino Unido, Australia y Nueva Zelanda.
+                                                  <br/>
+                                                  Para ello, se toma provecho de "Segmentación de datos", esto para hacer el filtro de datos de una manera más rápida y sencilla. A continuación,
+                                                  los datos resultantes se extraen y se introducen en otra hoja en blanco.
+                                                </p>
+                                              </div>
+                                                <div id="thirdstep">
+                                                  <p>Para continuar, se limpian los registros, dejando solo las columnas de iso_code, continent, location, date, total_cases, new_cases,datos que
+                                                    corresponden a la información necesaria para responder la pregunta de investigación.</p>
+                                                </div>
+                                                <div id="fourthstep">
+                                                  <p>Finalizando, se incorpora una columna a cada registro con el IDH correspondiente.
+                                                  Ya que son 2043 registros, para incorporar el IDH de cada país de manera más rápida, creamos una tabla aparte con el IDH de cada país seleccionado y utilizamos
+                                                la funcion BUSCARX, para ubicar el IDH correspondiente en cada registro dependiendo del país al que pertenece.
+                                                <br/>
+                                                En este punto, los datos ya están listos para ser analizados con diferentes análisis estadísticos.
+                                              </p>
+                                                </div>
+                                            </section>
+                                          </div>
+
+                                          <p>.</p>
                                           <br/>
                                     </div>
                                 </div>
+
                                 <div id="tab2">
-                                    <img src="img/blog-post-2.jpg" alt="">
+                                    <img src="img/matriz.svg" alt="" class="headerimg">
                                     <div class="text-content">
                                       <ul class="info-post">
                                           <li>Datos</li>
@@ -518,6 +590,7 @@ http://www.templatemo.com/tm-508-power
                                         <p>Aqui va imagen de la matriz de datos, tipos de datos, variables dependientes e independientes</p>
                                     </div>
                                 </div>
+
                                 <div id="tab3">
                                     <img src="img/blog-post-2.jpg" alt="">
                                     <div class="text-content">
@@ -525,7 +598,7 @@ http://www.templatemo.com/tm-508-power
                                           <li>Resultado</li>
                                       </ul>
                                         <h4>¿Qué tipo de información pueden extraer?</h4>
-                                        <p>Aqui van graficas de excel, y analisis de las gráficas, tipo de analisis y area de estudio</p>
+                                        <p>Aqui van graficas de excel, y analisis de las gráficas, tipo de analisis, tipo de investigación y area de estudio</p>
                                     </div>
                                 </div>
                                 <div id="tab4">
@@ -539,13 +612,27 @@ http://www.templatemo.com/tm-508-power
                                     </div>
                                 </div>
                                 <div id="tab5">
-                                    <img src="img/blog-post-4.jpg" alt="">
+                                    <img src="img/excel.svg" alt="" class="headerimg">
                                     <div class="text-content">
                                       <ul class="info-post">
                                           <li>Fuentes</li>
                                       </ul>
                                         <h4>Fuentes de recopilación de datos</h4>
-                                        <p></p>
+                                        <p>Las fuentes de datos elegidas para la investigación son las siguientes, las cuales corresponden a la base de datos dada y datos que brindarán el IDH:</p>
+                                        <ul class="lista">
+                                          <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                            <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                                          </svg>
+                                          PNUD. (2019). Informe sobre Desarrollo Humano 2019. Nueva York: PNUD.<a href="http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf">http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf</a>
+                                        </li>
+                                        <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                          <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                                        </svg>
+                                        Centro Europeo para la Prevención y el Control de las Enfermedades ECDC. (2020, 1 octubre). Datos del coronavirus de la enfermedad de COVID-19 - Portal de datos abiertos de la Unión Europea. Portal de datos abiertos para la UE.<a href="https://data.europa.eu/euodp/es/data/dataset/covid-19-coronavirus-data">https://data.europa.eu/euodp/es/data/dataset/covid-19-coronavirus-data</a>
+                                      </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
