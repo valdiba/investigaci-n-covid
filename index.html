@@ -501,7 +501,13 @@ http://www.templatemo.com/tm-508-power
                                         <li>Detalles</li>
                                     </ul>
                                       <h4>Detalles de la Investigación</h4>
-                                      <p>Aqui va tipo de analisis, tipo de investigación y area de estudio</p>
+                                      <p>Esta investigación se desallorrará dentro del contexto del COVID-19 basándonos en datos recolectados por terceros (como las Naciones
+                                        Unidas y la ECDC), por lo cual se trata de una Investigación Retrospectiva y Observacional(sin intervención).
+                                        <br/>
+                                        Además se trata de una investigación Longitudinal y analítica, pues se busca analizar y comparar la evolución de virus (desde dos variables: casos totales y casos nuevos),
+                                        por lo que se miden las variables periódicamente, con ello, se busca poner a prueba la hipótesis inicial.
+                                        FALTA EL ÄREA DE ESTUDIO Y EL TIPO DE ANÄLISIS
+                                      </p>
                                   </div>
                               </div>
 
@@ -540,6 +546,11 @@ http://www.templatemo.com/tm-508-power
                                                           4
                                                         </a>
                                                     </li>
+                                                    <li class="col-md-15 col-sm-12 col-xs-12">
+                                                        <a href="#fifthstep" >
+                                                          5
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                           </div>
@@ -565,11 +576,16 @@ http://www.templatemo.com/tm-508-power
                                                     corresponden a la información necesaria para responder la pregunta de investigación.</p>
                                                 </div>
                                                 <div id="fourthstep">
-                                                  <p>Finalizando, se incorpora una columna a cada registro con el IDH correspondiente.
+                                                  <p>Como cuerto paso, se incorpora una columna a cada registro con el IDH correspondiente.
                                                   Ya que son 2043 registros, para incorporar el IDH de cada país de manera más rápida, creamos una tabla aparte con el IDH de cada país seleccionado y utilizamos
                                                 la funcion BUSCARX, para ubicar el IDH correspondiente en cada registro dependiendo del país al que pertenece.
+                                              </p>
+                                                </div>
+                                                <div id="fifthstep">
+                                                  <p>Para finalizar, se crea una tabla dinámica, esto con el fin de obtener el promedio de los casos nuevos, y casos totales de cada continente
+                                                    de una manera más rápida y senclla. Se coloca la fecha como fila y el continente como columna, además se promedia el IDH, los casos totales y los casos nuevos.
                                                 <br/>
-                                                En este punto, los datos ya están listos para ser analizados con diferentes análisis estadísticos.
+                                                En este punto, los datos ya están listos para ser analizados con diferentes técnicas estadísticas.
                                               </p>
                                                 </div>
                                             </section>
@@ -596,28 +612,14 @@ http://www.templatemo.com/tm-508-power
                                             <th>Fuente de datos</th>
                                           </tr>
                                             <tr>
-                                              <td>IDH</td>
+                                              <td>Promedio IDH</td>
                                               <td>Constante</td>
                                               <td>Numérica (decimal)</td>
                                               <td>NA</td>
                                               <td>Informe sobre Desarrollo Humano 2019</td>
                                             </tr>
                                             <tr>
-                                              <td>ISO code</td>
-                                              <td>Variable</td>
-                                              <td>Categórica</td>
-                                              <td>Independiente</td>
-                                              <td>Base de datos ECDC</td>
-                                            </tr>
-                                            <tr>
                                               <td>Continent</td>
-                                              <td>Variable</td>
-                                              <td>Categórica</td>
-                                              <td>Independiente</td>
-                                              <td>Base de datos ECDC</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Location</td>
                                               <td>Variable</td>
                                               <td>Categórica</td>
                                               <td>Independiente</td>
@@ -631,16 +633,16 @@ http://www.templatemo.com/tm-508-power
                                               <td>Base de datos ECDC</td>
                                             </tr>
                                             <tr>
-                                              <td>Total cases</td>
+                                              <td>Promedio Total cases</td>
                                               <td>Variable</td>
-                                              <td>Numérico (entero)</td>
+                                              <td>Numérico (decimal)</td>
                                               <td>Dependiente</td>
                                               <td>Base de datos ECDC</td>
                                             </tr>
                                             <tr>
-                                              <td>New cases</td>
+                                              <td>Promedio New cases</td>
                                               <td>Variable</td>
-                                              <td>Numérico (entero)</td>
+                                              <td>Numérico (decimal)</td>
                                               <td>Dependiente</td>
                                               <td>Base de datos ECDC</td>
                                             </tr>
@@ -714,21 +716,33 @@ http://www.templatemo.com/tm-508-power
                               <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
                               <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
                             </svg>
-                            CNN. (30 de 03 de 2020). CNN. Obtenido de 90 días de coronavirus: más de 770.000 casos y más de 36.000 muertes,
-                            y un tercio de la población mundial en cuarentena por una crisis que aún no ve su fin90 días de coronavirus: <a href="https://cnnespanol.cnn.com/2020/03/30/cronologia-coronavirus-90-dias-700000-casos-34-000-muertes-cnn/">https://cnnespanol.cnn.com/2020/03/30/cronologia-coronavirus-90-dias-700000-casos-34-000-muertes-cnn/</a>
+                            Centro Europeo para la Prevención y el Control de las Enfermedades ECDC. (2020, 1 octubre). Datos del coronavirus de la enfermedad de COVID-19 - Portal de datos abiertos de la Unión Europea. Portal de datos abiertos para la UE.<a href="https://data.europa.eu/euodp/es/data/dataset/covid-19-coronavirus-data">https://data.europa.eu/euodp/es/data/dataset/covid-19-coronavirus-data</a>
                           </li>
-                          <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
-                            <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-                          </svg>
-                          Mundo, B. N. (03 de 08 de 2020). BBC News Mundo. Obtenido de Coronavirus: el mapa que muestra el número de infectados y muertos en el mundo por covid-19: <a href="https://www.bbc.com/mundo/noticias-51705060">https://www.bbc.com/mundo/noticias-51705060</a>
-                        </li>
-                        <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
-                          <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-                        </svg>
-                        PNUD. (2019). Informe sobre Desarrollo Humano 2019. Nueva York: PNUD.<a href="http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf">http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf</a>
-                      </li>
+                            <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                              <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                              </svg>
+                                CNN. (30 de 03 de 2020). CNN. Obtenido de 90 días de coronavirus: más de 770.000 casos y más de 36.000 muertes,
+                                y un tercio de la población mundial en cuarentena por una crisis que aún no ve su fin90 días de coronavirus: <a href="https://cnnespanol.cnn.com/2020/03/30/cronologia-coronavirus-90-dias-700000-casos-34-000-muertes-cnn/">https://cnnespanol.cnn.com/2020/03/30/cronologia-coronavirus-90-dias-700000-casos-34-000-muertes-cnn/</a>
+                            </li>
+                            <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                              <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                              </svg>
+                                Mundo, B. N. (03 de 08 de 2020). BBC News Mundo. Obtenido de Coronavirus: el mapa que muestra el número de infectados y muertos en el mundo por covid-19: <a href="https://www.bbc.com/mundo/noticias-51705060">https://www.bbc.com/mundo/noticias-51705060</a>
+                           </li>
+                           <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                             <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                             </svg>
+                               PNUD. (2019). Informe sobre Desarrollo Humano 2019. Nueva York: PNUD.<a href="http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf">http://hdr.undp.org/sites/default/files/hdr_2019_overview_-_spanish.pdf</a>
+                            </li>
+                            <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-quote" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M2 1h12a1 1 0 0 1 1 1v11.586l-2-2A2 2 0 0 0 11.586 11H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                              <path fill-rule="evenodd" d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                            </svg>
+                            BIOESTADISTICO. (2012, 12 febrero). 01. Tipos de investigación | Metodología de la investigación científica [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=QXmKN34hbtM&ab_channel=BIOESTADISTICO">https://www.youtube.com/watch?v=QXmKN34hbtM&ab_channel=BIOESTADISTICO</a>
+                          </li>
                           </ul>
                         </div>
 
